@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "nickswizardry",
+	"version": "${version}",
+	"name": "Nick's Wizardry",
+	"description": "My first mod!",
+	"authors": [
+		"LegoNick1208"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/nickswizardry/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.legonick1208.nickswizardry.NicksWizardryMod"
+		],
+		"client": [
+			"net.legonick1208.nickswizardry.ModClient"
+		],
+		"fabric-datagen": [
+			"net.legonick1208.nickswizardry.DataGenerator"
+		]
+	},
+	"mixins": [
+		"nickswizardry.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.14",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
