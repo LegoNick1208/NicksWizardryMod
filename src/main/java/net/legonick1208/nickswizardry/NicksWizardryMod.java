@@ -2,6 +2,12 @@ package net.legonick1208.nickswizardry;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.legonick1208.nickswizardry.block.FlammableBlockRegistries;
+import net.legonick1208.nickswizardry.block.ModBlocks;
+import net.legonick1208.nickswizardry.block.StrippableBlockRegistries;
+import net.legonick1208.nickswizardry.item.ModItemGroups;
+import net.legonick1208.nickswizardry.item.ModItems;
+import net.legonick1208.nickswizardry.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,6 +20,13 @@ public class NicksWizardryMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
+		ModWorldGeneration.generateModWorldGen();
+
+		StrippableBlockRegistries.registerStrippedBlocks();
+		FlammableBlockRegistries.registerFlammableBlocks();
 	}
 }
