@@ -1,3 +1,6 @@
 {
-  "item.nickswizardry.basic-wand": "Basic Wand"
+  "item.nickswizardry.basic-wand": "Basic Wand",
+  "key.catagory.nickswizardry.key_catagory": "Nicks Wizardry",
+  "key.nickswizardry.advance_wand": "Advance Wand",
+  "key.nickswizardry.decrement_wand": "Decrement Wand"
 }

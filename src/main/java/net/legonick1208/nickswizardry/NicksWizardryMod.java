@@ -7,6 +7,7 @@ import net.legonick1208.nickswizardry.block.ModBlocks;
 import net.legonick1208.nickswizardry.block.StrippableBlockRegistries;
 import net.legonick1208.nickswizardry.item.ModItemGroups;
 import net.legonick1208.nickswizardry.item.ModItems;
+import net.legonick1208.nickswizardry.networking.ModMessages;
 import net.legonick1208.nickswizardry.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,5 +29,7 @@ public class NicksWizardryMod implements ModInitializer {
 
 		StrippableBlockRegistries.registerStrippedBlocks();
 		FlammableBlockRegistries.registerFlammableBlocks();
+
+		ModMessages.registerC2SPackets();
 	}
 }

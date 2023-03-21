@@ -19,7 +19,7 @@
 			"net.legonick1208.nickswizardry.NicksWizardryMod"
 		],
 		"client": [
-			"net.legonick1208.nickswizardry.ModClient"
+			"net.legonick1208.nickswizardry.NicksWizardryClient"
 		],
 		"fabric-datagen": [
 			"net.legonick1208.nickswizardry.DataGenerator"
@@ -29,6 +29,7 @@
 		"nickswizardry.mixins.json"
 	],
 	"depends": {
+		"fabric-key-binding-api-v1": "*",
 		"fabricloader": ">=0.14.14",
 		"minecraft": "~1.19.3",
 		"java": ">=17",
